@@ -494,7 +494,7 @@ class NuScenesExplorer:
         points = points[:, mask]
         coloring = coloring[mask]
 
-        return points, coloring, im
+        return points, coloring, im, mask
 
     def render_pointcloud_in_image(self, sample_token: str, dot_size: int=5, pointsensor_channel: str='LIDAR_TOP',
                                    camera_channel: str='CAM_FRONT') -> None:
